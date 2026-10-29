@@ -27,11 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!response.ok) {
         throw new Error('Unable to send your message.');
       }
-
+document.querySelector('.form-card h2').textContent = 'Your Message is Received!';
       form.innerHTML = `
         <div role="status" aria-live="polite" style="padding:24px 0;line-height:1.7;">
-          <h3 style="margin-bottom:12px;">Thank You</h3>
-          <p>Thank you, your message has been received. I'll contact you as soon as possible.</p>
+          
+          <p>Thank you, I'll contact you shortly!.</p>
         </div>
       `;
     } catch (error) {
