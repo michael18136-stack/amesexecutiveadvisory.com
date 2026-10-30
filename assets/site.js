@@ -32,7 +32,7 @@ document.querySelector('.form-card h2').textContent = 'Your Message is Received!
       form.innerHTML = `
         <div role="status" aria-live="polite" style="padding:24px 0;line-height:1.7;">
           
-          <H2>Thank you, I'll contact you shortly.</H2>
+          <H3>Thank you, I'll contact you shortly.</H3>
         </div>
       `;
     } catch (error) {
