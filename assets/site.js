@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         throw new Error('Unable to send your message.');
       }
 document.querySelector('.form-card h2').textContent = 'Your Message is Received!';
+      document.querySelector('.form-card > p.lead').style.display = 'none';
       form.innerHTML = `
         <div role="status" aria-live="polite" style="padding:24px 0;line-height:1.7;">
           
